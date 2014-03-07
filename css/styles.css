@@ -4,55 +4,99 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: 		all 0.2s ease;
-	-ms-transition:			all 0.2s ease;
-	-o-transition: 			all 0.2s ease;
-
 	background-image: no-repeat;
-
-	position: relative;
-
 }
 
 body {
 	margin:0;
+	padding:0;
 	text-align: center;
-
 }
 
 #navbar {
 	width: 100%;
-	padding: 0.8em 0;
-	margin: 0 0 3em 0;
+	height: 4em;
+	padding: 0.2em 0;
+	margin: 0 2em 0 0;
 	background: #2f2f2f;
-}
-
-#toplogo{
-	width:120px;
-}
-
-#menu-icon{
-	height: 2em;
-	vertical-align: left;
-}
-
-ul.nav {
 	text-align: left;
+	position: fixed;
+	top: auto;
+}
+
+#toplogo {
+	width:120px;
+	margin-left: 1em;
+	margin-top: 1em;
+	float: left;
+}
+
+#icon-menu {
+	height: 2em;
+	float:right;
+	margin-right: 2em;
+	padding-left: 2em;
+}
+
+#navbar ul {
 	list-style: none;
+}
+
+#navbar ul > li:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	position: absolute;
+	right: 4.5em;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: 		all 0.2s ease;
+	-ms-transition:			all 0.2s ease;
+	-o-transition: 			all 0.2s ease;
+	transition: 				all 0.2s ease;
+}
+
+#navbar ul > li > ul {
+	display: block;
+	text-align: left;
+	color: black;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+#navbar ul > li > ul > li {
+	border: 1px solid #2f2f2f;
+	background-color: white;
+	width: 10em;
+	padding: 0.5em 2em 0.5em 0;
+}
+
+#navbar ul > li > ul > li > a {
 	text-decoration: none;
+	color: #2f2f2f;
+	padding: 0.5em;
+	width: 100%;
+	height: 100%;
+}
+
+#navbar ul > li > ul > li:hover {
+	background-color: #00aeef;
+}
+
+#navbar ul > li > ul > li:hover > a {
+	color: white;
 }
 
 #logo {
 	width:300px;
 }
 
-#phone{
+#phone-img {
 	width:300px;
 }
 
 table {
-	padding: 10px 10%
+	vertical-align: center;
+	padding-top: 5em;
 }
 
 td {
@@ -100,6 +144,6 @@ td {
 	color:white;
 }
 
-#btn-register.hover{
+#btn-register.hover {
 	color: #404041;
 }

@@ -5,37 +5,41 @@
 <head>
 	<meta charset="utf-8">
 	<title>tagSurf</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<div id="navbar">
-	<img src="img/ts_logo_text_white.png" alt="tagSurf logo" id="toplogo">
-	<img src="icons/chevron-down.svg" alt="menu" id="menu-icon">
-	<ul class="nav">
-		<li><a href="#">About</a></li>
-		<li><a href="#">Privacy</a></li>
-		<li><a href="#">Terms</a></li>
-		<li><a href="#">Beta</a></li>
+		<a href="index.html"><img src="img/ts_logo_text_white.png" alt="tagSurf logo" id="toplogo"></a>
+		
+		<ul id="dropdown">
+			<li><img src="icons/chevron-down.svg" alt="menu" id="icon-menu">
+				<ul id="menu">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Beta</a></li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 
 	<table>
-	<tr>
-		<td><img src="img/ts_logo_stacked_grey.png" alt="tagSurf logo" id="logo">
-		<td><img src="img/card_voting_graphic3.png" alt="Surf the tags of the web" id="phone"></td>
-	</tr>
-	<tr><td colspan="2" id="tagline">Surf the tags of the web</tr>
+		<tr>
+			<td><img src="img/ts_logo_stacked_grey.png" alt="tagSurf logo" id="logo">
+			<td><img src="img/card_voting_graphic3.png" alt="Surf the tags of the web" id="phone-img"></td>
+		</tr>
+		<tr><td colspan="2" id="tagline">Surf the tags of the web</td></tr>
 	</table>
 
 	<div id="register-bar-left">
 		<div id="signup">
 
-		Join the beta:
+			Join the beta:
 
-		<input id="email" type="email" name="email" method="post" placeholder=" email address">
-		<a href="#" class="btn" id="btn-register">Register</a>
-
+			<input id="email" type="email" name="email" method="post" placeholder=" email address">
+			<a href="#" class="btn" id="btn-register">Register</a>
 		</div>
 	</div>
 </body>
