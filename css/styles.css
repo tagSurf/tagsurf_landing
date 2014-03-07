@@ -1,0 +1,105 @@
+* {
+	font-family: 'Raleway', sans-serif;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: 		all 0.2s ease;
+	-ms-transition:			all 0.2s ease;
+	-o-transition: 			all 0.2s ease;
+
+	background-image: no-repeat;
+
+	position: relative;
+
+}
+
+body {
+	margin:0;
+	text-align: center;
+
+}
+
+#navbar {
+	width: 100%;
+	padding: 0.8em 0;
+	margin: 0 0 3em 0;
+	background: #2f2f2f;
+}
+
+#toplogo{
+	width:120px;
+}
+
+#menu-icon{
+	height: 2em;
+	vertical-align: left;
+}
+
+ul.nav {
+	text-align: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+#logo {
+	width:300px;
+}
+
+#phone{
+	width:300px;
+}
+
+table {
+	padding: 10px 10%
+}
+
+td {
+	padding: 10px 125px;
+	text-align: center;
+}
+
+#tagline {
+	font-size: 60px;
+	padding-top: 10px;
+}
+ 
+#register-bar-left { 
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  background: #00aeef;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 5px; 
+  border-radius-right: 30px;
+  border-color: black;
+  z-index: 300;
+  position: relative;
+}
+
+#signup {
+  font-size: 30px;
+  color: white;
+}
+
+#email {
+	border-radius: 30px;
+	border-style: none;
+	padding: 15px  50px 15px 10px;
+	min-width: 10em;
+	font-size: 25px;
+}
+
+#btn-register {
+	border-right-color: white;
+	border-radius: -15px;
+	padding: 30px;
+	text-decoration: none;
+	color:white;
+}
+
+#btn-register.hover{
+	color: #404041;
+}
