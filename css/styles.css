@@ -87,15 +87,15 @@ body {
 }
 
 #logo {
-	width:18em;
+	width:500px;
 }
 
 #phone-img {
-	width:18em;
+	width: 500px;
 }
 
 table {
-	padding-top: 5em;
+	padding-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -109,8 +109,8 @@ td {
 }
 
 #tagline {
-	font-size: 60px;
-	padding-top: 10px;
+	font-size: 70px;
+	padding-top: 70px;
 }
  
 #register-bar-left { 
