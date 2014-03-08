@@ -1,10 +1,9 @@
 * {
 	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-
-	background-image: no-repeat;
 }
 
 body {
@@ -15,27 +14,31 @@ body {
 
 #navbar {
 	width: 100%;
-	height: 4em;
-	padding: 0.2em 0;
-	margin: 0 2em 0 0;
+	height: 60px;
+	padding: 0;
+	margin: 0;
 	background: #2f2f2f;
 	text-align: left;
 	position: fixed;
 	top: auto;
+	z-index: 5;
 }
 
 #toplogo {
 	width:120px;
-	margin-left: 1em;
-	margin-top: 1em;
-	float: left;
+	margin-left: 17px;
+	margin-top: 17px;
+	position: absolute;
+	left: 0;
 }
 
 #icon-menu {
-	height: 2em;
-	float:right;
-	margin-right: 2em;
-	padding-left: 2em;
+	height: 32px;
+	margin-right: 35px;
+	padding-left: 35px;
+	position: absolute;
+	right:0;
+	top: 15px;
 }
 
 #navbar ul {
@@ -46,7 +49,7 @@ body {
 	opacity: 1;
 	visibility: visible;
 	position: absolute;
-	right: 4.5em;
+	right: 70px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: 		all 0.2s ease;
 	-ms-transition:			all 0.2s ease;
@@ -66,16 +69,14 @@ body {
 #navbar ul > li > ul > li {
 	border: 1px solid #2f2f2f;
 	background-color: white;
-	width: 10em;
-	padding: 0.5em 2em 0.5em 0;
+	width: 200px;
+	padding: 5px 30px 5px 0;
 }
 
 #navbar ul > li > ul > li > a {
 	text-decoration: none;
-	color: #2f2f2f;
-	padding: 0.5em;
-	width: 100%;
-	height: 100%;
+	font-size: 20px;
+	padding-left: 12px;
 }
 
 #navbar ul > li > ul > li:hover {
@@ -87,61 +88,100 @@ body {
 }
 
 #logo {
-	width:500px;
+	width: 35%;
 }
 
 #phone-img {
-	width: 500px;
+	width: 30%;
 }
 
 table {
-	padding-top: 100px;
+	padding-top: 5%;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	z-index: -1;
-	min-width: 55em;
+	min-width: 50%;
 }
 
 td {
-	padding: 1em 4em;
+	padding-top: 5%;
 	text-align: center;
 }
 
 #tagline {
-	font-size: 70px;
-	padding-top: 70px;
+	font-size: 2em;
 }
  
 #register-bar-left { 
-  margin-bottom: 10px;
-  margin-top: 20px;
-  padding: 10px;
+  margin: 4% 0;
+  padding: 0.25%;
   background: #00aeef;
   position: relative;
+  z-index: 1
 }
 
 #signup {
-  font-size: 30px;
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 #email {
-	border-radius: 30px;
+	border-radius: 65px;
 	border-style: none;
-	padding: 15px  50px 15px 10px;
-	min-width: 10em;
-	font-size: 25px;
+	padding: 0.5% 0.9% 0.5% 0.9%;
+	min-width: 40%;
+	font-size: 0.9em;
+	margin-right: -0.2%;
+	position: relative;
+	z-index: 3;
+}
+
+#email-bar {
+	border-right: 0.3em solid white;
+	border-top: 0.3em solid white;
+	border-bottom: 0.3em solid white;
+	border-bottom-right-radius: 90px;	
+	border-top-right-radius: 90px;
+	padding: 0.6% 1% 0.9% 0;
+	position: relative;
+	z-index: 2;
 }
 
 #btn-register {
-	border-right-color: white;
-	border-radius: -15px;
-	padding: 30px;
+	border-right: 0.3em solid white;
+	border-top: 0.3em solid white;
+	border-bottom: 0.3em solid white;
+	padding: 1% 1% 0.9% 0;
 	text-decoration: none;
-	color:white;
+	color: white;
+	border-bottom-right-radius: 90px;	
+	border-top-right-radius: 90px;
+	font-size: 1em;
+	margin-left: -21px;
+	padding-left: 21px;
+	z-index: 1;
+	position: relative; 
 }
 
-#btn-register.hover {
+#btn-register:hover {
+	background-color: #48a4df;
+}
+
+#btn-register:active {
 	color: #404041;
 }
+
+
+@media only screen and (max-width: 1000px) {
+
+   body { font-size: 0.8em; }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+   body { font-size: 0.5em; }
+
+}
+
