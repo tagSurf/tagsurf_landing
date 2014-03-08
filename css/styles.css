@@ -87,20 +87,24 @@ body {
 }
 
 #logo {
-	width:300px;
+	width:18em;
 }
 
 #phone-img {
-	width:300px;
+	width:18em;
 }
 
 table {
-	vertical-align: center;
 	padding-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: -1;
+	min-width: 55em;
 }
 
 td {
-	padding: 10px 125px;
+	padding: 1em 4em;
 	text-align: center;
 }
 
@@ -114,12 +118,6 @@ td {
   margin-top: 20px;
   padding: 10px;
   background: #00aeef;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 5px; 
-  border-radius-right: 30px;
-  border-color: black;
-  z-index: 300;
   position: relative;
 }
 
