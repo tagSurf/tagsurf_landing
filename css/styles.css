@@ -106,14 +106,14 @@ a {
 }
 
 table {
-	padding-top: 80px;
+	padding-top: 70px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 }
 
 td {
-	padding-top: 5%;
+	padding-top: 4%;
 	text-align: center;
 }
 
@@ -166,7 +166,7 @@ td {
 	border-bottom: 0.3em solid white;
 	border-bottom-right-radius: 80px;	
 	border-top-right-radius: 80px;
-	padding: 0.25em 0.25em 0.3em 0;
+	padding: 0.25em 0.25em 0.32em 0;
 	position: relative;
 	margin-right: -21px;
 	z-index: 2;
