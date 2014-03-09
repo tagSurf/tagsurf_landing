@@ -29,7 +29,7 @@ a {
 }
 
 #toplogo {
-	width:120px;
+	width: 120px;
 	margin-left: 17px;
 	margin-top: 17px;
 	position: absolute;
@@ -41,7 +41,7 @@ a {
 	margin-right: 35px;
 	padding-left: 35px;
 	position: absolute;
-	right:0;
+	right: 0;
 	top: 15px;
 }
 
@@ -75,12 +75,12 @@ a {
 	background-color: white;
 	font-size: 0.5em;
 	width: 100%;
-	padding: 5px 30px 5px 0;
+	padding: 0.1em 3em 0.1em 0;
 }
 
 #navbar ul > li > ul > li > a {
 	text-decoration: none;
-	padding-left: 12px;
+	padding-left: 0.5em;
 }
 
 #navbar ul > li > ul > li:hover {
@@ -209,16 +209,20 @@ td {
    #register-bar { font-size: 1em; }
 
    #email-border { padding: 0.25em 0.25em 0.4em 0; }
+ 
+   #btn-register { padding: 0.49em 0.8em 0.5em 1.3em; }
 
-   #btn-register { padding: 0.49em 0.8em 0.5em 1.3em;}
+   #navbar ul > li > ul > li > a { font-size: 1.6em; }
 }
 
 @media only screen and (max-width: 600px) {
 
    body { font-size: 0.5em; }
 
-   #register-bar { font-size: 1.15em;}
+   #navbar ul > li > ul > li > a { font-size: 2em; }
 
-   #btn-register { padding: 0.5em 0.8em 0.5em 1.8em;}
+   #register-bar { font-size: 1.15em; }
+
+   #btn-register { padding: 0.5em 0.8em 0.5em 1.8em; }
 }
 
