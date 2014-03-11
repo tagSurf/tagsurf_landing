@@ -6,54 +6,79 @@
 	box-sizing: border-box;
 }
 
-body {
-	margin:0;
-	padding:0;
-	text-align: center;
-}
-
 a {
 	text-decoration: none;
 } 
 
-#navbar {
-	width: 100%;
-	height: 60px;
-	padding: 0;
-	margin: 0;
-	background: #2f2f2f;
-	text-align: left;
-	position: fixed;
-	top: auto;
-	z-index: 5;
-}
-
-#toplogo {
-	width: 120px;
-	margin-left: 17px;
-	margin-top: 17px;
-	position: absolute;
-	left: 0;
-}
-
-#menu-icon {
-	height: 32px;
-	margin-right: 35px;
-	padding-left: 35px;
-	position: absolute;
-	right: 0;
-	top: 15px;
-}
-
-#navbar ul {
+ul {
 	list-style: none;
 }
 
-#navbar ul > li:hover > ul {
+.main-header {
+	width: 100%;
+	height: 60px;
+	background-color: #2f2f2f;
+	position: fixed;
+	z-index: 5;
+}
+
+.main-logo,
+.navmenu-icon 
+.frame {
+	display: inline-block;
+}
+
+.main-logo {
+	width: 120px;
+	left: 9px;
+	top: 9px;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown {
+	display: inline-block;
+	top: 12px;
+	right: 10px;
+	margin: 0;
+	float: right;
+	position: relative;
+}
+
+.navmenu {
+	display: inline-block;
+	right: 60px;
+	top: 0;
+	position: absolute;
+	float: right;
+	visibility: hidden;	
+	opacity: 0;
+}
+
+.navmenu a {
+	display: block;
+	font-size: 0.5em;
+	border-bottom: 1px solid #2f2f2f;
+	border-right: 1px solid #2f2f2f;
+	border-left: 1px solid #2f2f2f;
+	background-color: white;
+	margin: 0;
+	padding: 0.2em 3em 0.2em 0.5em;
+	position: relative;
+}
+
+.navmenu-icon {
+	height: 32px;
+	padding-left: 35px;
+	position: absolute;
+	right: 20px;
+}
+
+.dropdown > li:hover > ul {
 	opacity: 1;
 	visibility: visible;
-	position: absolute;
-	right: 70px;
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: 		all 0.2s ease;
 	-ms-transition:			all 0.2s ease;
@@ -61,39 +86,27 @@ a {
 	transition: 				all 0.2s ease;
 }
 
-#navbar ul > li > ul {
-	display: block;
-	text-align: left;
-	color: black;
-	opacity: 0;
-	visibility: hidden;
-	position: absolute;
-}
-
-#navbar ul > li > ul > li {
-	border: 1px solid #2f2f2f;
-	background-color: white;
-	font-size: 0.5em;
-	width: 100%;
-	padding: 0.1em 3em 0.1em 0;
-}
-
-#navbar ul > li > ul > li > a {
-	text-decoration: none;
-	padding-left: 0.5em;
-}
-
-#navbar ul > li > ul > li:hover {
+.navmenu a:hover {
 	background-color: #00aeef;
-}
-
-#navbar ul > li > ul > li:hover > a {
 	color: white;
 }
 
-#navbar ul > li > ul > li:active > a {
+.navmenu a:active {
 	color: #404041;
 }
+
+.frame {
+	top: 65px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.content-container {
+	padding: 0.7em 0;
+	text-align: center;
+}	
 
 #logo {
 	width:30%;
@@ -105,78 +118,60 @@ a {
 	min-width: 200px;
 }
 
-table {
-	padding-top: 70px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-
-td {
-	padding-top: 4%;
-	text-align: center;
-}
-
 #tagline {
 	font-size: 2em;
 }
+
+.register-bar,
+.register-bar-text,
+.email-input-bar,
+.email-border,
+.btn-register {
+	display: inline-block;
+}
  
-#register-bar { 
-  margin: 4% 0;
-  padding: 0.25%;
+.register-bar { 
+  margin: 6% 0;
+  padding: 0.5em 0;
   position: relative;
+  width: 100%;
   background-color: #00aeef;
   z-index: 1;
   color: white;
 }
 
-/*#register-bar-left {
-  margin: 4% 0;
-  padding: 0.25%;
-  background-color: #00aeef;
-  position: relative;
-  z-index: 1;
-  float: left;
-}
-
-#register-bar-right {
-	background-color: #00aeef;
-	margin: 4% 0;
-  padding: 0.25%;
-	position: relative;
-	z-index: 1;
-	float: left;
-}*/
-
-#email-bar {
+.email-input-bar {
 	border-radius: 65px;
 	border-style: none;
 	padding: 0.2em 0 0.2em 0.3em;
-	min-width: 40%;
+	min-width: 200px;
 	font-size: 0.9em;
 	margin-right: -0.1em;
 	position: relative;
 	z-index: 2;
 	outline: none;
+	top:0;
+	bottom:0;
 }
 
-#email-border {
+.email-border {
 	border-right: 0.3em solid white;
 	border-top: 0.3em solid white;
 	border-bottom: 0.3em solid white;
 	border-bottom-right-radius: 80px;	
 	border-top-right-radius: 80px;
-	padding: 0.25em 0.25em 0.32em 0;
+	padding: 0.2em 0.25em 0.2em 0;
 	position: relative;
-	margin-right: -21px;
-	z-index: 2;
+	margin-right: -45px;
+	z-index: 4;
+	background-color: #00aeef;
 }
 
-#btn-register {
-	border-right: 0.3em solid white;
-	border-top: 0.3em solid white;
-	border-bottom: 0.3em solid white;
-	padding: 0.5em 0.8em 0.4em 0.9em;
+.btn-register {
+	border-right: 0.4em solid white;
+	border-top: 0.4em solid white;
+	border-bottom: 0.4em solid white;
+	padding: 0.5em 0.6em 0.46em 50px;
 	color: white;
 	border-bottom-right-radius: 80px;	
 	border-top-right-radius: 80px;
@@ -185,7 +180,6 @@ td {
 	position: relative; 
 	outline: none;
 	font-size: 0.9em;
-	/*background-color: yellow;*/
 }
 
 .btn:hover {
@@ -193,36 +187,41 @@ td {
 	outline: none;
 }
 
-.bar {
-	clear:both;
-}
-
-#btn-register:active {
+.btn:active {
 	color: #404041;
 }
+
+.btn > a {
+	display: block;
+	color: white;
+}
+
+/*.bar {
+	clear:both;
+}*/
 
 
 @media only screen and (max-width: 1000px) {
 
    body { font-size: 0.8em; }
 
-   #register-bar { font-size: 1em; }
+   .register-bar { font-size: 1.1em; }
+ 
+   .btn-register { padding: 0.50em 0.6em 0.45em 50px; }
+
+   .navmenu a { font-size: 0.6em; } 
 
    #email-border { padding: 0.25em 0.25em 0.4em 0; }
- 
-   #btn-register { padding: 0.49em 0.8em 0.5em 1.3em; }
-
-   #navbar ul > li > ul > li > a { font-size: 1.6em; }
 }
 
 @media only screen and (max-width: 600px) {
 
    body { font-size: 0.5em; }
 
-   #navbar ul > li > ul > li > a { font-size: 2em; }
+   .register-bar { font-size: 1.3em; }
 
-   #register-bar { font-size: 1.15em; }
+   .btn-register { padding: 0.50em 0.6em 0.45em 45px; }
 
-   #btn-register { padding: 0.5em 0.8em 0.5em 1.8em; }
+   .navmenu a { font-size: 0.8em; }
 }
 
