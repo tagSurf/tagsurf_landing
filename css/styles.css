@@ -15,11 +15,6 @@ ul {
 	list-style: none;
 }
 
-#register-bar-left {
-	position: relative;
-	top: -7px;
-}
-
 .main-header {
 	position: fixed;
 	z-index: 5;
@@ -28,16 +23,7 @@ ul {
 	height: 60px;
 }
 
-.main-logo,
-.navmenu-icon, 
-.dropdowm,
-.navmenu,
-.frame, 
-.register-bar,
-.register-bar-text,
-.email-input-bar,
-.email-border,
-.btn-register {
+.inline {
 	display: inline-block;
 }
 
@@ -51,26 +37,35 @@ ul {
 	top: 9px;
 }
 
-.dropdown {
+.navmenu{
 	position: absolute;
-	float: right;
+	float:right;
+}
+
+.dropdown-icon {
+	position: absolute;
+	height: 32px;
+	padding-left: 35px;
+	right: 20px;
+}
+
+.dropdown {
 	margin: 0;
 	top: 13px;
 	right: 10px;
 }
 
-.navmenu {
-	position: absolute;
-	float: right;
+.navmenu-list {
 	opacity: 0;
 	visibility: hidden;
 	right: 60px;
 	top: 0;	
 }
 
-.navmenu a {
+.navmenu-list a {
 	position: relative;
 	display: block;
+	float: none;
 	margin: 0;
 	padding: 0.2em 3em 0.2em 0.5em;
 	font-size: 0.5em;
@@ -79,13 +74,6 @@ ul {
 	border-bottom: 1px solid #2f2f2f;
 	border-right: 1px solid #2f2f2f;
 	border-left: 1px solid #2f2f2f;
-}
-
-.navmenu-icon {
-	position: absolute;
-	height: 32px;
-	padding-left: 35px;
-	right: 20px;
 }
 
 .dropdown > li:hover > ul {
@@ -110,13 +98,13 @@ ul {
 .frame {
 	position: relative;
 	z-index: 1;
-	top: 70px;
+	top: 80px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .content-container {
-	padding: 0.7em 0;
+	padding: 0.6em 0;
 	text-align: center;
 }	
 
@@ -137,19 +125,27 @@ ul {
 .register-bar { 
   position: relative;
   z-index: 1;
-  margin: 6% 0;
-  padding: -5px 0;
   color: white;
   background-color: #00aeef;
+}
+
+.register-bar-background {
+	z-index:1;
+	margin: 125px 0 50px 0;
+  padding: -5px 0;
   width: 100%;
-  height: 59px;
+  height: 2.5em;
+}
+
+.register-bar-text {
+	position: relative;
+	top: -0.3em;
 }
 
 .email-input-bar {
-	position: relative;
 	z-index: 4;
-	font-size: 0.9em;
 	color: #2f2f2f;
+	background-color: white;
 	text-align: left;
 	margin-right: -0.1em;
 	padding: 0.2em 0 0.2em 0.3em;
@@ -158,74 +154,111 @@ ul {
 	border-radius: 65px;
 	border-style: none;
 	outline: none;
-	min-width: 200px;	
+	width: 100%;
 }
 
 .email-border {
-	position: relative;
 	z-index: 4;
-	padding: 0.18em 0.25em 0.2em 0;
+	padding: 0.25em 0.30em 0.25em 0;
 	margin-right: -45px;
-	background-color: #00aeef;
 	border-right: 0.3em solid white;
 	border-top: 0.3em solid white;
 	border-bottom: 0.3em solid white;
 	border-bottom-right-radius: 80px;	
 	border-top-right-radius: 80px;
-	top: -9px;
+	top: -0.33em;
+	width: 35%;
 }
 
 .btn-register {
-	position: relative; 
-	z-index: 1;
-	font-size: 0.9em;
-	color: white;
-	outline: none;
-	padding: 0.48em 0.6em 0.46em 50px;
-	border-right: 0.4em solid white;
-	border-top: 0.4em solid white;
-	border-bottom: 0.4em solid white;
+	padding: 0.30em 0.6em 0.30em 1.6em;
+	border-right: 0.3em solid white;
+	border-top: 0.3em solid white;
+	border-bottom: 0.3em solid white;
 	border-bottom-right-radius: 80px;	
 	border-top-right-radius: 80px;
-	top: -9px;
+	top: -0.25em;
+}
+
+.btn {
+	outline:none;
+}
+
+.btn > a {
+	display: block;
+	color: white;
 }
 
 .btn:hover {
 	background-color: #48a4df;
-	outline: none;
-}
-.btn > a {
-	display: block;
-	color: white;
 }
 
 .btn:active > a { 
 	color: #404041;
 }
 
-/*.bar {
-	clear:both;
-}*/
-
 @media only screen and (max-width: 1000px) {
 
    body { font-size: 0.8em; }
 
-   .register-bar { font-size: 1.1em; }
+   .frame {top:90px;}
+
+   .register-bar { font-size: 1.3em; }
+
+   .register-bar-background { height: 2.9em;}
  
-   .btn-register { padding: 0.50em 0.6em 0.46em 50px; }
+   .btn-register { font-size: 1.2em; padding: 0.48em 0.6em 0.48em 2.2em; }
+
+   .email-input-bar { font-size: 1.1em; }
+
+   .email-border { width: 45%; top: -0.28em; }
 
    .navmenu a { font-size: 0.6em; } 
 }
 
 @media only screen and (max-width: 600px) {
 
-   body { font-size: 0.5em; }
+   body { font-size: 0.6em; }
+
+   #tagline { font-size: 2.5em; padding: 0.8em 1em;}
+
+   .frame { top:100px;}
 
    .register-bar { font-size: 1.3em; }
 
-   .btn-register { padding: 0.50em 0.6em 0.45em 45px; }
+   .register-bar-background { height: 3em;}
+
+   .register-bar-text { font-size: 1.5em; top:-0.25em;}
+
+   .btn-register { font-size: 1.2em; padding: 0.5em 0.6em 0.5em 2.6em; top:-0.35em;}
+
+   .email-input-bar { font-size: 1.2em;}
+
+   .email-border { width: 45%; top: -0.28em;}
 
    .navmenu a { font-size: 0.8em; }
 }
 
+
+@media only screen and (max-width: 450px) {
+
+   body { font-size: 0.6em; }
+
+   #tagline { font-size: 2.5em; padding: 0.8em 1em;}
+
+   .frame { top:100px;}
+
+   .register-bar { font-size: 1.1em; }
+
+   .register-bar-background { height: 3em;}
+
+   .register-bar-text { font-size: 1.4em; top:-0.1em;}
+
+   .btn-register { font-size: 1.1em; padding: 0.6em 0.6em 0.7em 3.5em; top:-0.3em;}
+
+   .email-input-bar { font-size: 1.1em; padding: 0.45em 0 0.45em 0.3em;}
+
+   .email-border { width: 45%; top: -0.35em; }
+
+   .navmenu a { font-size: 0.8em; }
+}
