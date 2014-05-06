@@ -68,7 +68,7 @@ ul {
 	float: none;
 	margin: 0;
 	padding: 0.2em 3em 0.2em 0.5em;
-	font-size: 0.5em;
+	font-size: 0.4em;
 	text-align: left;
 	background-color: white;
 	border-bottom: 1px solid #2f2f2f;
@@ -148,7 +148,7 @@ ul {
 	background-color: white;
 	text-align: left;
 	margin-right: -0.1em;
-	padding: 0.2em 0 0.2em 0.3em;
+	padding: 0.2em 0 0.2em 0.8em;
 	top:0;
 	bottom:0;
 	border-radius: 65px;
@@ -252,13 +252,13 @@ ul {
 
    .register-bar-background { height: 3em;}
 
-   .register-bar-text { font-size: 1.4em; top:-0.1em;}
+   .register-bar-text { font-size: 1.4em; top:-0.1em; left:0.1em;}
 
-   .btn-register { font-size: 1.1em; padding: 0.6em 0.6em 0.7em 3.5em; top:-0.3em;}
+   .btn-register { font-size: 1.1em; padding: 0.6em 0.6em 0.75em 3.3em; top:-0.3em;}
 
-   .email-input-bar { font-size: 1.1em; padding: 0.45em 0 0.45em 0.3em;}
+   .email-input-bar { font-size: 1.1em; padding: 0.5em 0 0.5em 0.5em;}
 
-   .email-border { width: 45%; top: -0.35em; }
+   .email-border { width: 38%; top: -0.35em; }
 
    .navmenu a { font-size: 0.8em; }
 }
