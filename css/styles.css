@@ -327,4 +327,8 @@ ul {
    .email-border { width: 38%; top: -0.35em; }
 
    .navmenu a { font-size: 0.8em; }
+
+   .dropdown-icon { right:5px; }
+
+   .navmenu-list { right:40px; } 
 }
