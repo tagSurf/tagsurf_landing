@@ -15,6 +15,10 @@ ul {
 	list-style: none;
 }
 
+.abcs {
+	list-style-type: lower-alpha;
+}
+
 .main-header {
 	position: fixed;
 	z-index: 5;
@@ -258,11 +262,25 @@ ul {
 	text-align: left; 
 }
 
+.termslist {
+	padding: 0 10% 10px;
+	list-style-type: disc; 
+	color: #404041;
+	font-size: 90%;
+}
+
+.termslist > li {
+	padding-top: 15px;
+	text-align: left; 
+
 .content div {
 	padding: 15px 10% 15px;
 	text-align: center;
 }
 
+.terms{
+	max-width: 80%;		
+}
 @media only screen and (max-width: 1000px) {
 
    body { font-size: 0.8em; }
