@@ -18,11 +18,15 @@
 		<h1 class="main-logo inline"><a href="index.html"><img src="img/ts_logo_text_white.png" alt="tagSurf logo" class="main-logo navbar inline" id="toplogo"></a></h1>		
 		<nav>
 			<ul class="navmenu dropdown inline">
-				<li><img src="img/chevron_down.png" alt="menu" class="navmenu dropdown-icon inline" id="navmenu-icon">
+				<li><img src="img/chevron_down.png" alt="menu" class="navmenu dropdown-icon inline" id="navmenu-icon" onclick="
+            var navmenu = document.getElementsByClassName('navmenu-list')[0];
+            navmenu.opacity = 1;
+            navmenu.visibility = 'visible';
+            ">
 					<ul class="navmenu navmenu-list">	
 						<li><a href="index.html">Home</a></li>
             <li><a href="privacy.html">Privacy</a></li>
-						<li><a href="http://beta.tagsurf.co">Beta</a></li>
+						<li><a href="http://beta.tagsurf.co/share/trending/0">Beta</a></li>
 					</ul>
 				</li>
 			</ul>
