@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>tagSurf</title>
+		<meta name="description" content="tagSurf is an app that lets you surf trending social media posts for any #hashtag. Download it here.">
+		<meta name="keywords" content="tag,surf,hashtag,tagsurf,tagsurfapp,download,engine,search">
+		<meta name="author" content="tagSurf Corp.">
 		<meta name="viewport" content="width=device-width">
 		<meta property="og:url" content="http://tagsurf.co">
 		<meta property="og:title" content="tagSurf">
 		<meta property="og:type" content="article">
 		<meta property="og:site_name" content="tagSurf">
-		<meta property="og:description" content="Surf the tags of the web">
+		<meta property="og:description" content="tagSurf is an app that lets you surf trending social media posts for any #hashtag. Download it here.">
 		<meta property="og:image" content="http://tagsurf.co/img/tagSurf_Landing.png">
 		<meta property="og:image:type" content="image/png">
 		<meta property="og:image:width" content="1920">
@@ -23,13 +26,14 @@
 
 	<body>
 		<header class="main-header">
-			<h1 class="main-logo inline"><a href="index.html"><img src="img/ts_logo_text_white.png" alt="tagSurf logo" class="main-logo navbar inline" id="toplogo"></a></h1>		
+			<h1 class="main-logo inline"><a href="index.html"><img src="img/ts_logo_text_white.png" class="main-logo navbar inline" id="toplogo"></a></h1>		
 			<nav>
 				<ul class="navmenu dropdown inline">
-					<li><img src="img/chevron_down.png" alt="menu" class="navmenu dropdown-icon inline" id="navmenu-icon" onclick="
+					<li><img src="img/chevron_down.png" class="navmenu dropdown-icon inline" id="navmenu-icon" onclick="
 						var navmenu = document.getElementsByClassName('navmenu-list')[0];
 						navmenu.opacity = 1;
 						navmenu.visibility = 'visible';
+						analytics.track('Open Nav Menu (mobile)');
 						">
 						<ul class="navmenu navmenu-list">
 							<li><a href="terms.html">Terms</a></li>
@@ -44,15 +48,20 @@
 			<a href="http://beta.tagsurf.co/share/trending/0">
 				<img src="img/card_voting_graphic_WHITE.png" alt="Surf the tags of the web" id="phone-img">
 			</a>
-			<div id="tagline" class="inline">Surf trending social media posts for any #tag</div>
+			<div id="tagline" class="inline">Surf trending social media posts for any <span class="blue">#tag</span></div>
 			<a href="https://appsto.re/us/hYmt1.i">
-				<img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" class="inline" id="apple-badge">
+				<img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" class="inline" id="apple-badge" onclick="analytics.track('Go to iTunes Store');">
 			</a>
 			<a href="https://play.google.com/store/apps/details?id=co.tagsurf.tagsurf">
-				<img src="img/get-it-on-google-play-store-logo.png" class="inline" id="google-badge">
+				<img src="img/get-it-on-google-play-store-logo.png" class="inline" id="google-badge" onclick="analytics.track('Go to Google Play Store');">
 			</a>
 		</div>
-		<div class="inline bottom-bar"> tagSurf Corp. - Copyright 2014</div>
+		<div class="inline bottom-bar"> 
+			<div class="inline" id="copyright">tagSurf Corp. - Copyright 2014</div>
+			<a href="https://heapanalytics.com/?utm_source=badge">
+				<img id="heap-badge" class="inline" src="https://heapanalytics.com/img/badge.png" alt="Heap - iOS and Web Analytics" />
+			</a>
+		</div>
 
 		<script type="text/javascript">
 			window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",

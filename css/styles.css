@@ -1,6 +1,7 @@
 * {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
+	font-weight: 300;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -135,6 +136,13 @@ ol {
 	margin-left: 8%;
 }
 
+#heap-badge {
+	width:108px;
+	height:41px;
+	float:right;
+	margin: -5px 0;
+}
+
 #phone-img {
 	width: 23%;
 	min-width: 200px;
@@ -145,6 +153,7 @@ ol {
 
 #tagline {
 	font-size: 2.5em;
+	font-weight: 200;
 	margin-top: 16%;
 	margin-bottom: 5%;
 	max-width: 60%;
@@ -267,6 +276,8 @@ ol {
 
    .bottom-bar { margin-top: 10%; padding: 2%; font-size: 100%; }
 
+   #copyright { padding-top: 3px;}
+
    #phone-img { margin-top: 10%; }
 }
 
@@ -290,6 +301,8 @@ ol {
 
    .bottom-bar { margin-top: 24%; padding: 2%; }
 
+   #copyright { padding-top: 7px;}
+
    #logo { width: 50%; }
 }
 
@@ -312,7 +325,9 @@ ol {
 
    .navmenu-list { right:40px; } 
 
-   .bottom-bar { margin-top: 10%; padding: 3%; }
+   .bottom-bar { margin-top: 10%; padding: 2%; }
+
+   #copyright { padding-top: 7px; padding-left: 20%;}
 
    #phone-img { float: initial; margin-top: 20%; }
 
